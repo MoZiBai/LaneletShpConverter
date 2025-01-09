@@ -8,4 +8,4 @@ lanelet2、boost、eigen、geographiclib、pugixml、gdal.
 Some dependencies are required for compiling lanelet2.
 ## Conclusion
 The data structure of shp is not suitable for conversion with lanelet2. A shp file can only have one data structure, such as dots, lines, and surfaces. At the same time, it is difficult for shp to express the relation of the lanelet2 data structure.
-The selection of the origin has a huge impact on the data of lanelet2. The approximate origin and the center point are taken as the origin, and the point coordinates converted by the generated converter will have a small offset.
+The choice of the origin has a huge impact on the data of lanelet2. If the origin is approximated and the center point is used as the origin, the point coordinates converted by the generated converter will have a large offset.
