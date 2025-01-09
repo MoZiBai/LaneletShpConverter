@@ -1,0 +1,8 @@
+ros2 launch autoware_launch planning_simulator.launch.xml map_path:=/autoware_map lanelet2_map_path:=/autoware_map/lanelet2_map.osm
+
+docker run -it --rm --privileged --net=host -e DISPLAY=host.docker.internal:0.0 -v D:/work/12_23/shp2lanelet2/data/out/osm:/autoware_map ghcr.io/autowarefoundation/autoware:universe
+
+ros2 launch autoware_launch planning_simulator.launch.xml map_path:=/autoware_map lanelet2_map_path:=/autoware_map/lanelet2_map.osm map_origin_param_path:=/autoware_map/lanelet2_map.yaml
+
+
+

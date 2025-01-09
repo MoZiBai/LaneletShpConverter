@@ -1,0 +1,20 @@
+# VS 文件夹和缓存
+.vs/
+**/ipch/
+*.pdb
+*.ipch
+*.db
+
+# 编译输出
+**/x64/
+data/
+
+# VS项目文件
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# 编译生成的文件
+*.exe
